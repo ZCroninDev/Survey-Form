@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Bed and Breakfast Survey</title>
+   <link rel="stylesheet" href="Survey Form.css">
+</head>
+<body>
+   <header>
+     <h1 id="title">Mom and Pops B&B Survey</h1>
+   </header>
+     <h2 id="desctription"> Thank you for choosing to stay at Mom and Pops Bed and Breakfast!<br>
+       We appreciate your business and value your opinion.<br>
+       Please rate your stay!
+     </h2>
+   
+ <form id="survey-form" method="GET">
+   <fieldset>
+     <label for="name" id="name-label">*Name</label>
+     <input type="text" name="name" id="name" placeholder="Please insert your name" required autofocus>
+     <label for="email" id="email-label">*Email</label>
+     <input type="email" name="email" id="email" placeholder="your@email.com" required>
+     <label for="number" id="number-label">Size of party</label>
+     <input type="number" id="number" min="0" max="50" placeholder="Total number of people in your party?">
+     <label for="Room Theme">Which room did you stay in?</label>
+     <select id="dropdown" name="Room Theme" id="Room Theme">
+       <option disabled selected>Select an option</option>
+       <option value="The Hunting Cabin">The Hunting Cabin</option>
+       <option value="Home and Hearth">Home and Hearth</option>
+       <option value="The Lodge">The Lodge</option>
+     </select>
+     <div class="question" id="q1">
+      <p>How well did you like the food?</p>
+      <input type="radio" name="needs" id="a1" value="1"> 1 (Worst)
+      <label for="a1"></label>
+      <input type="radio" name="needs" id="a2" value="2"> 2
+      <label for="a2"></label>
+      <input type="radio" name="needs" id="a3" value="3"> 3
+      <label for="a3"></label>
+      <input type="radio" name="needs" id="a4" value="4"> 4
+      <label for="a4"></label>
+      <input type="radio" name="needs" id="a5" value="5"> 5 (Best)
+      <label for="a5"></label>
+    </div>
+  
+    <div class="question" id="q2">
+      <p>How would you rate your overall experience?</p>
+      <input type="radio" name="experience" id="b1" value="1"> 1 (Worst)
+      <label for="b1"></label>
+      <input type="radio" name="experience" id="b2" value="2"> 2
+      <label for="b2"></label>
+      <input type="radio" name="experience" id="b3" value="3"> 3
+      <label for="b3"></label>
+      <input type="radio" name="experience" id="b4" value="4"> 4
+      <label for="b4"></label>
+      <input type="radio" name="experience" id="b5" value="5"> 5 (Best)
+      <label for="b5"></label>
+    </div>
+     <label for="comments">Anything else you'd like to add?</label>
+     <textarea rows="4" cols="50"></textarea>
+     <button id="submit" type="submit">Submit</button>
+   
+   </fieldset>
+ </form>
+</body>
+</html>
+
